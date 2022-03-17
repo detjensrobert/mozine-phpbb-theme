@@ -1,0 +1,79 @@
+
+/* === MOZINE SIDEBAR === */
+
+.mozine-body-flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+}
+
+/* move sidebar below content on small screens */
+@media screen and (max-width: 900px) {
+  .mozine-body-flexbox {
+    display: block;
+  }
+}
+
+.mozine-body-flexbox > .wrap {
+  flex: 5 5;
+  margin: 20px 0;
+}
+
+.mozine-sidebar {
+  flex: 0 0 180px;
+  margin: 20px 0;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.mozine-sidebar > .mozine-logo {
+  width: 100%;
+  height: 30px;
+}
+
+.mozine-sidebar > .navbar {
+  padding: 15px 20px;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.mozine-sidebar > .navbar-with-list {
+  padding: 5px 20px;
+}
+
+/* remove list dot */
+.mozine-sidebar > .navbar > ul {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+
+/* reset text size in about box */
+.mozine-about {
+  font-size: unset !important;
+}
+
+/* fix search box go button */
+#cse-search-box > div {
+  display: flex;
+}
+
+#cse-search-box > div > .search {
+  flex: 1;
+  margin-right: 2px;
+}
+
+#cse-search-box > div > .button2 {
+  flex: 0;
+  margin-left: 2px;
+}
+
+/* translation links side by side */
+.translations {
+  /* display: flex; */
+}
+.translations > li {
+  display: inline;
+  margin-right: 5px;
+}

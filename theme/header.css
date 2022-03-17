@@ -1,0 +1,45 @@
+/* === MOZINE HEADER === */
+
+/* make header image fit against top of page */
+body {
+  padding-top: 0;
+}
+.mozine-header {
+  background: url("./images/sky.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  margin: 0;
+  padding: 10px;
+  height: 70px;
+
+  display: flex;
+}
+
+/* use mozine site logo */
+.mozine-logo {
+  width: 180px;
+  height: 100%;
+
+  background-image: url("./images/mozine-logo-orig.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  content: none; /* remove link text */
+}
+.mozine-spacer {
+  flex-grow: 1;
+}
+.mozine-blimp {
+  width: 133px;
+  height: auto;
+  background-image: url("./images/blimp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* hide stock logo banner */
+.headerbar {
+  display: none;
+}
